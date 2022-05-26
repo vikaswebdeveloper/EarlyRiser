@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    position: fixed;
+}
+
+#navbar.active{
+    left: 0px;
+}
+
+#navbar.notactive{
+    transition: all 1s ease-in-out;
+}
+
+header{
+    width: 100vw;
+    height: 100vh;
+}
+
+#leftNav{
+    margin-left: 1em;
+    cursor: pointer;
+}
+
+#logo{
+    font-weight: 700;
+    font-family: 'Mochiy Pop P One';
+    color:black;
+}
+
+#rightNav{
+    display: flex;
+}
+
+li,a{
+    list-style: none;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 1.3em;
+    font-family: 'Dongle';
+    color: black;
+}
+
+#Homebtn{
+    margin-right: 1em;
+}
+
+#Aboutbtn{
+    margin-right: 1em;
+}
+
+#Contactbtn{
+    margin-right: 1em;
+}
+
+.greet{
+    font-family: 'The Nautigal';
+    font-size: 8em;
+    padding-top: 0.5em;
+    animation: greet 3s ease-in-out;
+    transition: cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+@keyframes greet {
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+.background{
+    background: rgb(0, 0, 0, 0)url('7.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.paragraph{
+    font-family: 'The Nautigal';
+    font-size: 4em;
+    animation: sunrise 3s ease-in-out;
+    transition: cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+@keyframes sunrise {
+    0%{
+        opacity: 0%;
+        padding-top: 100vh;
+    }
+    100%{
+        padding-top: none;
+    }
+}
+
+img{
+    height: 9em;
+    width: 9em;
+    border-radius: 20px;
+    margin-top: 1em;
+}
+
+.vikas{
+    width: 80vh;
+    padding-right: 3em;
+    color: rgb(52, 152, 192);
+}
+
+.harry{
+    width: 80vh;
+    color: rgb(228, 59, 59);
+}
+
+.harrypic{
+    margin-right: 3em;
+    border-radius: 500px;
+    height: 9em;
+    width: 9em;
+    border-radius: 500px;
+    margin-top: 1em;
+}
+
+.instapic{
+    margin-right: 3em;
+    border-radius: 20px;
+    height: 9em;
+    width: 9em;
+    border-radius: 20px;
+    margin-top: 1em;
+}
+
+.vikashead{
+    font-family: 'Mochiy Pop P One';
+}
+
+.vikasabout{
+    font-family: 'Mochiy Pop P One';
+    font-weight: 500;
+}
+
+.container{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+}
+
+.container2{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+    flex-direction: row-reverse;
+}
+
+.section2{
+    background-color: rgb(218, 218, 218);
+    width: 100%;
+    overflow: hidden;
+}
+
+p{
+    font-family: 'Mochiy Pop P One';
+}
+
+.p{
+    padding-bottom: 2em;
+}
+
+.thought{
+    font-size: 3em;
+    font-family: 'The Nautigal';
+    color: rgb(26, 168, 81);
+}
+
+.thoughtp{
+    color: rgb(26, 168, 81);
+    padding-bottom: 2em;
+}
+
+.aboutHead{
+    margin-top: 2em;
+    font-family: 'Mochiy Pop P One';
+    width: 60%;
+    color: rgb(149, 26, 173);
+}
+
+footer{
+    height: 20vh;
+    background-color: rgb(67, 190, 228);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7em;
+}
+
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+
+.line{
+    width: 33px;
+    background-color: black;
+    height: 4px;
+    margin: 5px 3px;
+}
+
+@media only screen and (max-width: 720px){
+.container{
+    flex-direction: column-reverse;
+}
+
+.container2{
+    flex-direction: column-reverse;
+}
+
+.vikas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-right: 0px;
+}
+
+.harry{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-right: 0px;
+}
+
+.harrypic{
+    margin-right: 0px;
+}
+
+.instapic{
+    margin-right: 0px;
+}
+
+.aboutHead{
+    width: 90%;
+}
+}
+
+@media only screen and (max-width: 500px){
+#rightNav{
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0.7em;
+}
+
+.burger{
+    display: block;
+}
+
+#navbar{
+    flex-direction: column;
+    background-color: rgb(102, 250, 255);
+    align-items: center;
+    height: max-content;
+    padding-top: 50px;
+    padding-right: 5px;
+    width: max-content;
+    transition: all 0.5s ease-in-out;
+    left: -200px;
+    margin-top: 50px;
+    position: absolute;
+}
+
+.button{
+    padding: 30px;
+}
+
+.navheight{
+    height: 72px;
+}
+
+footer{
+    width: 100%;
+}
+}
+
+
+

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&family=Mochiy+Pop+P+One&family=The+Nautigal&display=swap" rel="stylesheet">
+    <title>Early Riser</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar" class="navheight">
+            <div id="leftNav"  class="appear">
+                <h2 id="logo">
+                    Early Riser
+                </h2>
+            </div>
+            <div>
+                <ul id="rightNav"  class="appear">
+                    <li id="Homebtn" class="button" onclick="show1()"><a href="#home">Home</a></li>
+                    <li id="Aboutbtn" class="button" onclick="show1()"><a href="#about">About</a></li>
+                    <li id="Contactbtn" class="button" onclick="show1()"><a href="#Contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="burger" onclick="show()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <section id="home" class="background section1">
+            <center id="welcome">
+                <h1 class="greet">
+                    Welcome
+                </h1>
+                <p class="paragraph">
+                    Hey, i am vikas
+                </p>
+            </center>
+        </section>
+    </header>
+
+    <main>
+        <section id="about" class="section2">
+            <div class="container" data-aos="fade-left" data-aos-duration="1000" data-aos-offset="300">
+                <div class="vikas">
+                    <h2 class="vikashead">ME</h2>
+                    <p class="vikasabout">Hi, i am vikas and this website is made by me and i am a beginner. And if you also want to make such an awesome website like that then you can follow my teacher. Harish khan(harry) he is my teacher who taught me Everything about web development there are few more lines about him. </p>
+                </div>
+                <div class="vikasPic">
+                    <img src="vikas.formal.png" alt=""  >
+                </div>
+            </div>
+
+            <div class="container2" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="300">
+                <div class="harry">
+                    <h2 class="vikashead">TEACHER</h2>
+                    <p class="vikasabout">This is the man who taught me everything about web-development. All the education is free of cost and i'm thankful of him. And if you dont know about him there is a link for you go and check his channel he is an awesome teacher.</p>
+                </div>
+                <div>
+                    <img src="harry.jpg" alt="" class="harrypic">
+                </div>
+            </div>
+            
+            <div>
+                <center data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="100">
+                    <h2  class="thought">thought</h2>
+                    <p class="thoughtp">practice makes a person better not perfect.</p>
+                </center>
+            </div>
+        </section>
+
+        <section class="section3" id="Contact">
+            <center data-aos="slide-up" data-aos-duration="1000" data-aos-offset="200">
+            <h1 class="aboutHead">If you want to contact any of us from here then you can by simply clicking the inages given below</h1>
+            </center>
+            <div class="container" data-aos="flip-left" data-aos-duration="2000" data-aos-offset="300">
+                <div class="vikas">
+                    <h2 class="vikashead">YouTube</h2>
+                    <p class="vikasabout">This is the link for harry's youtube channel go and checkout if you also want to learn such that awesome things.</p>
+                </div>
+                <div class="vikasPic">
+                    <a href="https://www.youtube.com/c/CodeWithHarry"><img src="youtube.png" alt=""></a>
+                </div>
+            </div>
+
+            <div class="container2" data-aos="flip-right" data-aos-duration="2000" data-aos-offset="300">
+                <div class="harry">
+                    <h2 class="vikashead">Instagram</h2>
+                    <p class="vikasabout">this is my instagram account if you want to talk to me and want some help then just click on it.</p>
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/9033vika/"><img src="insta.png" class="instapic"></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>This website is done by me and you can give feedback to me on instagram.</p>
+    </footer>
+    <script>
+        function show(){
+    document.getElementById('navbar').classList.toggle('active');
+}
+function show1(){
+    document.getElementById('navbar').classList.toggle('active');
+}
+</script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
