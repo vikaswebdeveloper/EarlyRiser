@@ -265,11 +265,12 @@ footer{
 
 .burger{
     display: block;
+    position: fixed;
 }
 
 #navbar{
     flex-direction: column;
-    background-color: rgb(102, 250, 255);
+    background-color: rgb(207, 102, 255);
     align-items: center;
     height: max-content;
     padding-top: 50px;
@@ -279,6 +280,9 @@ footer{
     left: -200px;
     margin-top: 50px;
     position: absolute;
+    border-radius: 50px;
+    position: fixed;
+    z-index: 5;
 }
 
 .button{
@@ -292,7 +296,16 @@ footer{
 footer{
     width: 100%;
 }
+
+.background{
+    background: rgb(0, 0, 0)url(back.webp);
+    background-size: cover;
 }
+
+}
+
+
+
 
 
 
